@@ -1,0 +1,11 @@
+name: mc-env
+
+dependencies:
+- ipython
+- python=3.11
+- matplotlib
+- pandas
+- pip
+- numpy
+- scipy
+- yaml

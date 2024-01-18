@@ -1,0 +1,3 @@
+Setup:
+    grasp_path: "/vols/cms/lcr119/MCProduction/GrASP_Run3Summer23xGS.csv"
+    target_dir: "/vols/cms/lcr119/MCProduction/targets"

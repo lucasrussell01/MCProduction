@@ -1,4 +1,3 @@
-\begin{small}
 | Name                         | Dataset                                                      | 23wm Request                  | 23wm Status                            | 23BPixwm Request                  | 23BPixwm Status                        |
 |:-----------------------------|:-------------------------------------------------------------|:------------------------------|:---------------------------------------|:----------------------------------|:---------------------------------------|
 | DYJetsToLL_M-50              | DYJetsToLL_M-50_TuneCP5_13p6TeV-madgraphMLM-pythia8          | NONE                          | $${\color{red}\textbf{MISSING}}$$      | NONE                              | $${\color{red}\textbf{MISSING}}$$      |
@@ -17,4 +16,3 @@
 | DYto2L_M-50_1J_amcatnloFXFX  | DYto2L-2Jets_MLL-50_1J_TuneCP5_13p6TeV_amcatnloFXFX-pythia8  | GEN-Run3Summer23wmLHEGS-00327 | $${\color{orange}\textbf{SUBMITTED}}$$ | GEN-Run3Summer23BPixwmLHEGS-00322 | $${\color{green}\textbf{DONE}}$$       |
 | DYto2L_M-50_2J_amcatnloFXFX  | DYto2L-2Jets_MLL-50_2J_TuneCP5_13p6TeV_amcatnloFXFX-pythia8  | GEN-Run3Summer23wmLHEGS-00328 | $${\color{green}\textbf{DONE}}$$       | GEN-Run3Summer23BPixwmLHEGS-00323 | $${\color{orange}\textbf{SUBMITTED}}$$ |
 | DYto2TautoMuTauh_M-50        | DYto2TautoMuTauh_M-50_TuneCP5_13p6TeV_madgraphMLM-pythia8    | TAU-Run3Summer23wmLHEGS-00001 | $${\color{green}\textbf{DONE}}$$       | TAU-Run3Summer23BPixwmLHEGS-00001 | $${\color{green}\textbf{DONE}}$$       |
-\end{small}

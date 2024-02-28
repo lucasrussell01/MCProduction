@@ -1,3 +1,4 @@
+\begin{small}
 | Name                                    | Dataset                                                           | 23wm Request                  | 23wm Status                            | 23BPixwm Request                  | 23BPixwm Status                        |
 |:----------------------------------------|:------------------------------------------------------------------|:------------------------------|:---------------------------------------|:----------------------------------|:---------------------------------------|
 | ST_t-channel_top_4f_InclusiveDecays     | TBbarQ_t-channel_4FS_TuneCP5_13p6TeV_powheg-madspin-pythia8       | NONE                          | $${\color{red}\textbf{MISSING}}$$      | NONE                              | $${\color{red}\textbf{MISSING}}$$      |
@@ -16,3 +17,4 @@
 | ST_tW_antitop_LNu2Q_ext1                | TbarWplustoLNu2Q_TuneCP5_13p6TeV_powheg-pythia8                   | GEN-Run3Summer23wmLHEGS-00438 | $${\color{orange}\textbf{SUBMITTED}}$$ | GEN-Run3Summer23BPixwmLHEGS-00458 | $${\color{orange}\textbf{SUBMITTED}}$$ |
 | ST_s-channel_top_4f                     | TBbartoLplusNuBbar-s-channel-4FS_TuneCP5_13p6TeV_amcatnlo-pythia8 | NONE                          | $${\color{red}\textbf{MISSING}}$$      | NONE                              | $${\color{red}\textbf{MISSING}}$$      |
 | ST_s-channel_antitop_4f                 | TbarBtoLminusNuB-s-channel-4FS_TuneCP5_13p6TeV_amcatnlo-pythia8   | NONE                          | $${\color{red}\textbf{MISSING}}$$      | NONE                              | $${\color{red}\textbf{MISSING}}$$      |
+\end{small}

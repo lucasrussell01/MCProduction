@@ -1,3 +1,4 @@
+\begin{small}
 | Name                    | Dataset                                                                  | 23wm Request                  | 23wm Status                            | 23BPixwm Request                  | 23BPixwm Status                        |
 |:------------------------|:-------------------------------------------------------------------------|:------------------------------|:---------------------------------------|:----------------------------------|:---------------------------------------|
 | WtoLNu_amcatnloFXFX     | WtoLNu-2Jets_TuneCP5_13p6TeV_amcatnloFXFX-pythia8                        | NONE                          | $${\color{red}\textbf{MISSING}}$$      | NONE                              | $${\color{red}\textbf{MISSING}}$$      |
@@ -10,3 +11,4 @@
 | WToTauNu_M-200          | WtoNuTau_M-200_TuneCP5_13p6TeV_pythia8                                   | NONE                          | $${\color{red}\textbf{MISSING}}$$      | TAU-Run3Summer23BPixGS-00011      | $${\color{green}\textbf{DONE}}$$       |
 | WToMuNu_M-200           | WtoMuNu_M-200_TuneCP5_13p6TeV_pythia8                                    | NONE                          | $${\color{red}\textbf{MISSING}}$$      | TAU-Run3Summer23BPixGS-00010      | $${\color{green}\textbf{DONE}}$$       |
 | WtoLNu_HT-400To800      | WtoLNu-4Jets_MLNu-0to120_HT-400to800_TuneCP5_13p6TeV_madgraphMLM-pythia8 | GEN-Run3Summer23wmLHEGS-00297 | $${\color{green}\textbf{DONE}}$$       | GEN-Run3Summer23BPixwmLHEGS-00292 | $${\color{green}\textbf{DONE}}$$       |
+\end{small}

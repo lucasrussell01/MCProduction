@@ -1,3 +1,4 @@
+\begin{small}
 | Name           | Dataset                                  | 23wm Request                  | 23wm Status                       | 23BPixwm Request                  | 23BPixwm Status                  |
 |:---------------|:-----------------------------------------|:------------------------------|:----------------------------------|:----------------------------------|:---------------------------------|
 | WW             | WW_TuneCP5_13p6TeV_pythia8               | NONE                          | $${\color{red}\textbf{MISSING}}$$ | BTV-Run3Summer23BPixGS-00041      | $${\color{green}\textbf{DONE}}$$ |
@@ -21,3 +22,4 @@
 | ZZto2Nu2Q_ext1 | ZZto2Nu2Q_TuneCP5_13p6TeV_powheg-pythia8 | GEN-Run3Summer23wmLHEGS-00166 | $${\color{green}\textbf{DONE}}$$  | GEN-Run3Summer23BPixwmLHEGS-00161 | $${\color{green}\textbf{DONE}}$$ |
 | ZZto4L         | ZZto4L_TuneCP5_13p6TeV_powheg-pythia8    | GEN-Run3Summer23wmLHEGS-00165 | $${\color{green}\textbf{DONE}}$$  | GEN-Run3Summer23BPixwmLHEGS-00160 | $${\color{green}\textbf{DONE}}$$ |
 | ZZto4L_ext1    | ZZto4L_TuneCP5_13p6TeV_powheg-pythia8    | GEN-Run3Summer23wmLHEGS-00165 | $${\color{green}\textbf{DONE}}$$  | GEN-Run3Summer23BPixwmLHEGS-00160 | $${\color{green}\textbf{DONE}}$$ |
+\end{small}

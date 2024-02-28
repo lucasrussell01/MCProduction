@@ -139,8 +139,12 @@ for yaml_file in target_files:
 
     
     md = out_df.to_markdown(index = False)
+    
+    # Wrap the table in LaTeX commands to adjust font size
+    latex_table = f"\\begin{{small}}\n{md}\n\\end{{small}}"
+
     with open(f"{config['Setup']['campaign']}/{yaml_file.split('/')[-1].split('.')[0]}.md", 'w') as f:
-        f.write(md)
+        f.write(latex_table)
     
     # out_df.to_csv(f"{config['Setup']['campaign']}/{yaml_file.split('/')[-1].split('.')[0]}.csv")
                         

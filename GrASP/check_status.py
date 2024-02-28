@@ -21,18 +21,18 @@ df = pd.read_csv(data_path)
 
 def format_status(status):
     if status == 'done':
-        return "$${\\color{green}\\textbf{Done}}$$"
+        return "$${\\color{green}\\textbf{DONE}}$$"
         # return '<span style="color:green">Done</span>'
     elif status == 'submitted':
-        return "$${\\color{orange}\\textbf{Submitted}}$$"
+        return "$${\\color{orange}\\textbf{SUBMITTED}}$$"
         # return '<span style="color:orange">Submitted</span>'
     elif status == 'new':
-        return "$${\\color{orange}\\textbf{New}}$$"
+        return "$${\\color{orange}\\textbf{NEW}}$$"
         # return '<span style="color:orange">Submitted</span>'
     elif status == 'validation':
-        return "$${\\color{blue}\\textbf{Validation}}$$"
+        return "$${\\color{blue}\\textbf{VALIDATION}}$$"
         # return '<span style="color:blue">Validation</span>'
-    elif status is "N/A":
+    elif status == "N/A":
         return "$${\\color{red}\\textbf{MISSING}}$$"
         # return '<span style="color:red; font-weight:bold">MISSING</span>'
     else:
@@ -41,9 +41,13 @@ def format_status(status):
 for yaml_file in target_files:
     
     out_df = pd.DataFrame()
+    _names = []
     _datasets = []
-    _requests = []
-    _status = []
+    _23BPixwm_requests = []
+    _23BPixwmstatus = []
+    _23wm_requests = []
+    _23wmstatus = []
+    _multiple_requests = []
     
     
     print("************************************************************")
@@ -54,6 +58,10 @@ for yaml_file in target_files:
     
     with open(yaml_file, 'r') as file: # open the dataset list
         dataset_list = yaml.safe_load(file)
+        
+        # print(dataset_list)
+        
+        # raise RuntimeError("STOp")
         for name, dataset in dataset_list.items():
             if name=="config":
                 continue
@@ -69,25 +77,66 @@ for yaml_file in target_files:
                 n_matches = len(search['Dataset'])
                 if n_matches ==0:
                     print("\033[91m**WARNING!**\033[0m No Matches Found")
-                    _datasets.append(dataset_name)
-                    _requests.append("NONE")
-                    _status.append("N/A")
+                    _names.append(name)
+                    _datasets.append(dataset_name)  
+                    _23BPixwm_requests.append("NONE")
+                    _23BPixwmstatus.append("N/A")
+                    _23wm_requests.append("NONE")
+                    _23wmstatus.append("N/A")
+                    # _multiple_requests.append(False)
+                    
                 elif n_matches >=1:
+                    
+                    _names.append(name)
+                    _datasets.append(dataset_name)
+                        
+                    ## LOOK FOR BPIX AND NORMAL REQUESTS:
                     n_datasets_found += 1
                     print(f"\033[1m ** {n_matches} Matches ** \033[0m")
+                    
+                    found_BPix = 0
+                    found_wm = 0
+                    
                     for i in range(n_matches):
+                        if ("23BPix" in search['Root request'].iloc[i] and not found_BPix):
+                            print("DEBUG FOUND BPIX")
+                            _23BPixwm_requests.append(search['Root request'].iloc[i])
+                            _23BPixwmstatus.append(search['Root request status'].iloc[i])
+                            found_BPix = True
+                        elif ("23wm" in search['Root request'].iloc[i] and not found_wm):
+                            print("DEBUG FOUND WM")
+                            _23wm_requests.append(search['Root request'].iloc[i])
+                            _23wmstatus.append(search['Root request status'].iloc[i])
+                            found_wm = True
+                            
+                    if not found_BPix:
+                        _23BPixwm_requests.append("NONE")
+                        _23BPixwmstatus.append("N/A")
+                    if not found_wm:
+                        _23wm_requests.append("NONE")
+                        _23wmstatus.append("N/A")
+                        
+                        
                         print(f"- ROOT request: {search['Root request'].iloc[i]}, Status : {search['Root request status'].iloc[i]}")
-                        _datasets.append(dataset_name)
-                        _requests.append(search['Root request'].iloc[i])
-                        _status.append(search['Root request status'].iloc[i])
+                        # _requests.append(search['Root request'].iloc[i])
+                        # _status.append(search['Root request status'].iloc[i])
     
+    out_df["Name"] = _names
     out_df["Dataset"] = _datasets
-    out_df["Request"] = _requests
-    out_df["Status"] = _status
     
-    out_df["Status"] = out_df["Status"].apply(format_status)
+    print(_23wm_requests)
+    
+    
+    out_df["23wm Request"] = _23wm_requests
+    out_df["23wm Status"] = _23wmstatus
+    out_df["23wm Status"] = out_df["23wm Status"].apply(format_status)
+    
+    
+    out_df["23BPixwm Request"] =  _23BPixwm_requests
+    out_df["23BPixwm Status"] = _23BPixwmstatus
+    out_df["23BPixwm Status"] = out_df["23BPixwm Status"].apply(format_status)
+    
 
-    print(f"{config['Setup']['campaign']}")
     
     md = out_df.to_markdown(index = False)
     with open(f"{config['Setup']['campaign']}/{yaml_file.split('/')[-1].split('.')[0]}.md", 'w') as f:

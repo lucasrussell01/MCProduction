@@ -1,30 +1,18 @@
-| Dataset                                                           | Request                           | Status                                 |
-|:------------------------------------------------------------------|:----------------------------------|:---------------------------------------|
-| TBbarQ_t-channel_4FS_TuneCP5_13p6TeV_powheg-madspin-pythia8       | NONE                              | $${\color{red}\textbf{MISSING}}$$      |
-| TbarBQ_t-channel_4FS_TuneCP5_13p6TeV_powheg-madspin-pythia8       | NONE                              | $${\color{red}\textbf{MISSING}}$$      |
-| TWminusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8                     | GEN-Run3Summer23BPixwmLHEGS-00082 | $${\color{green}\textbf{Done}}$$       |
-| TWminusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8                     | GEN-Run3Summer23wmLHEGS-00083     | $${\color{green}\textbf{Done}}$$       |
-| TWminusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8                     | GEN-Run3Summer23BPixwmLHEGS-00082 | $${\color{green}\textbf{Done}}$$       |
-| TWminusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8                     | GEN-Run3Summer23wmLHEGS-00083     | $${\color{green}\textbf{Done}}$$       |
-| TbarWplusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8                   | GEN-Run3Summer23BPixwmLHEGS-00460 | $${\color{orange}\textbf{Submitted}}$$ |
-| TbarWplusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8                   | GEN-Run3Summer23wmLHEGS-00440     | $${\color{orange}\textbf{Submitted}}$$ |
-| TbarWplusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8                   | GEN-Run3Summer23BPixwmLHEGS-00460 | $${\color{orange}\textbf{Submitted}}$$ |
-| TbarWplusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8                   | GEN-Run3Summer23wmLHEGS-00440     | $${\color{orange}\textbf{Submitted}}$$ |
-| TWminusto4Q_TuneCP5_13p6TeV_powheg-pythia8                        | GEN-Run3Summer23BPixwmLHEGS-00083 | $${\color{green}\textbf{Done}}$$       |
-| TWminusto4Q_TuneCP5_13p6TeV_powheg-pythia8                        | GEN-Run3Summer23wmLHEGS-00084     | $${\color{green}\textbf{Done}}$$       |
-| TWminusto4Q_TuneCP5_13p6TeV_powheg-pythia8                        | GEN-Run3Summer23BPixwmLHEGS-00083 | $${\color{green}\textbf{Done}}$$       |
-| TWminusto4Q_TuneCP5_13p6TeV_powheg-pythia8                        | GEN-Run3Summer23wmLHEGS-00084     | $${\color{green}\textbf{Done}}$$       |
-| TbarWplusto4Q_TuneCP5_13p6TeV_powheg-pythia8                      | GEN-Run3Summer23BPixwmLHEGS-00459 | $${\color{orange}\textbf{Submitted}}$$ |
-| TbarWplusto4Q_TuneCP5_13p6TeV_powheg-pythia8                      | GEN-Run3Summer23wmLHEGS-00478     | $${\color{orange}\textbf{Submitted}}$$ |
-| TbarWplusto4Q_TuneCP5_13p6TeV_powheg-pythia8                      | GEN-Run3Summer23BPixwmLHEGS-00459 | $${\color{orange}\textbf{Submitted}}$$ |
-| TbarWplusto4Q_TuneCP5_13p6TeV_powheg-pythia8                      | GEN-Run3Summer23wmLHEGS-00478     | $${\color{orange}\textbf{Submitted}}$$ |
-| TWminustoLNu2Q_TuneCP5_13p6TeV_powheg-pythia8                     | GEN-Run3Summer23BPixwmLHEGS-00081 | $${\color{green}\textbf{Done}}$$       |
-| TWminustoLNu2Q_TuneCP5_13p6TeV_powheg-pythia8                     | GEN-Run3Summer23wmLHEGS-00082     | $${\color{green}\textbf{Done}}$$       |
-| TWminustoLNu2Q_TuneCP5_13p6TeV_powheg-pythia8                     | GEN-Run3Summer23BPixwmLHEGS-00081 | $${\color{green}\textbf{Done}}$$       |
-| TWminustoLNu2Q_TuneCP5_13p6TeV_powheg-pythia8                     | GEN-Run3Summer23wmLHEGS-00082     | $${\color{green}\textbf{Done}}$$       |
-| TbarWplustoLNu2Q_TuneCP5_13p6TeV_powheg-pythia8                   | GEN-Run3Summer23BPixwmLHEGS-00458 | $${\color{orange}\textbf{Submitted}}$$ |
-| TbarWplustoLNu2Q_TuneCP5_13p6TeV_powheg-pythia8                   | GEN-Run3Summer23wmLHEGS-00438     | $${\color{orange}\textbf{Submitted}}$$ |
-| TbarWplustoLNu2Q_TuneCP5_13p6TeV_powheg-pythia8                   | GEN-Run3Summer23BPixwmLHEGS-00458 | $${\color{orange}\textbf{Submitted}}$$ |
-| TbarWplustoLNu2Q_TuneCP5_13p6TeV_powheg-pythia8                   | GEN-Run3Summer23wmLHEGS-00438     | $${\color{orange}\textbf{Submitted}}$$ |
-| TBbartoLplusNuBbar-s-channel-4FS_TuneCP5_13p6TeV_amcatnlo-pythia8 | NONE                              | $${\color{red}\textbf{MISSING}}$$      |
-| TbarBtoLminusNuB-s-channel-4FS_TuneCP5_13p6TeV_amcatnlo-pythia8   | NONE                              | $${\color{red}\textbf{MISSING}}$$      |
+| Name                                    | Dataset                                                           | 23wm Request                  | 23wm Status                            | 23BPixwm Request                  | 23BPixwm Status                        |
+|:----------------------------------------|:------------------------------------------------------------------|:------------------------------|:---------------------------------------|:----------------------------------|:---------------------------------------|
+| ST_t-channel_top_4f_InclusiveDecays     | TBbarQ_t-channel_4FS_TuneCP5_13p6TeV_powheg-madspin-pythia8       | NONE                          | $${\color{red}\textbf{MISSING}}$$      | NONE                              | $${\color{red}\textbf{MISSING}}$$      |
+| ST_t-channel_antitop_4f_InclusiveDecays | TbarBQ_t-channel_4FS_TuneCP5_13p6TeV_powheg-madspin-pythia8       | NONE                          | $${\color{red}\textbf{MISSING}}$$      | NONE                              | $${\color{red}\textbf{MISSING}}$$      |
+| ST_tW_top_2L2Nu                         | TWminusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8                     | GEN-Run3Summer23wmLHEGS-00083 | $${\color{green}\textbf{DONE}}$$       | GEN-Run3Summer23BPixwmLHEGS-00082 | $${\color{green}\textbf{DONE}}$$       |
+| ST_tW_top_2L2Nu_ext1                    | TWminusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8                     | GEN-Run3Summer23wmLHEGS-00083 | $${\color{green}\textbf{DONE}}$$       | GEN-Run3Summer23BPixwmLHEGS-00082 | $${\color{green}\textbf{DONE}}$$       |
+| ST_tW_antitop_2L2Nu                     | TbarWplusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8                   | GEN-Run3Summer23wmLHEGS-00440 | $${\color{orange}\textbf{SUBMITTED}}$$ | GEN-Run3Summer23BPixwmLHEGS-00460 | $${\color{orange}\textbf{SUBMITTED}}$$ |
+| ST_tW_antitop_2L2Nu_ext1                | TbarWplusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8                   | GEN-Run3Summer23wmLHEGS-00440 | $${\color{orange}\textbf{SUBMITTED}}$$ | GEN-Run3Summer23BPixwmLHEGS-00460 | $${\color{orange}\textbf{SUBMITTED}}$$ |
+| ST_tW_top_4Q                            | TWminusto4Q_TuneCP5_13p6TeV_powheg-pythia8                        | GEN-Run3Summer23wmLHEGS-00084 | $${\color{green}\textbf{DONE}}$$       | GEN-Run3Summer23BPixwmLHEGS-00083 | $${\color{green}\textbf{DONE}}$$       |
+| ST_tW_top_4Q_ext1                       | TWminusto4Q_TuneCP5_13p6TeV_powheg-pythia8                        | GEN-Run3Summer23wmLHEGS-00084 | $${\color{green}\textbf{DONE}}$$       | GEN-Run3Summer23BPixwmLHEGS-00083 | $${\color{green}\textbf{DONE}}$$       |
+| ST_tW_antitop_4Q                        | TbarWplusto4Q_TuneCP5_13p6TeV_powheg-pythia8                      | GEN-Run3Summer23wmLHEGS-00478 | $${\color{orange}\textbf{SUBMITTED}}$$ | GEN-Run3Summer23BPixwmLHEGS-00459 | $${\color{orange}\textbf{SUBMITTED}}$$ |
+| ST_tW_antitop_4Q_ext1                   | TbarWplusto4Q_TuneCP5_13p6TeV_powheg-pythia8                      | GEN-Run3Summer23wmLHEGS-00478 | $${\color{orange}\textbf{SUBMITTED}}$$ | GEN-Run3Summer23BPixwmLHEGS-00459 | $${\color{orange}\textbf{SUBMITTED}}$$ |
+| ST_tW_top_LNu2Q                         | TWminustoLNu2Q_TuneCP5_13p6TeV_powheg-pythia8                     | GEN-Run3Summer23wmLHEGS-00082 | $${\color{green}\textbf{DONE}}$$       | GEN-Run3Summer23BPixwmLHEGS-00081 | $${\color{green}\textbf{DONE}}$$       |
+| ST_tW_top_LNu2Q_ext1                    | TWminustoLNu2Q_TuneCP5_13p6TeV_powheg-pythia8                     | GEN-Run3Summer23wmLHEGS-00082 | $${\color{green}\textbf{DONE}}$$       | GEN-Run3Summer23BPixwmLHEGS-00081 | $${\color{green}\textbf{DONE}}$$       |
+| ST_tW_antitop_LNu2Q                     | TbarWplustoLNu2Q_TuneCP5_13p6TeV_powheg-pythia8                   | GEN-Run3Summer23wmLHEGS-00438 | $${\color{orange}\textbf{SUBMITTED}}$$ | GEN-Run3Summer23BPixwmLHEGS-00458 | $${\color{orange}\textbf{SUBMITTED}}$$ |
+| ST_tW_antitop_LNu2Q_ext1                | TbarWplustoLNu2Q_TuneCP5_13p6TeV_powheg-pythia8                   | GEN-Run3Summer23wmLHEGS-00438 | $${\color{orange}\textbf{SUBMITTED}}$$ | GEN-Run3Summer23BPixwmLHEGS-00458 | $${\color{orange}\textbf{SUBMITTED}}$$ |
+| ST_s-channel_top_4f                     | TBbartoLplusNuBbar-s-channel-4FS_TuneCP5_13p6TeV_amcatnlo-pythia8 | NONE                          | $${\color{red}\textbf{MISSING}}$$      | NONE                              | $${\color{red}\textbf{MISSING}}$$      |
+| ST_s-channel_antitop_4f                 | TbarBtoLminusNuB-s-channel-4FS_TuneCP5_13p6TeV_amcatnlo-pythia8   | NONE                          | $${\color{red}\textbf{MISSING}}$$      | NONE                              | $${\color{red}\textbf{MISSING}}$$      |

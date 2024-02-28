@@ -1,0 +1,30 @@
+| Dataset                                                           | Request                           | Status                                                   |
+|:------------------------------------------------------------------|:----------------------------------|:---------------------------------------------------------|
+| TBbarQ_t-channel_4FS_TuneCP5_13p6TeV_powheg-madspin-pythia8       | NONE                              | <span style="color:red; font-weight:bold">MISSING</span> |
+| TbarBQ_t-channel_4FS_TuneCP5_13p6TeV_powheg-madspin-pythia8       | NONE                              | <span style="color:red; font-weight:bold">MISSING</span> |
+| TWminusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8                     | GEN-Run3Summer23BPixwmLHEGS-00082 | <span style="color:green">Done</span>                    |
+| TWminusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8                     | GEN-Run3Summer23wmLHEGS-00083     | <span style="color:green">Done</span>                    |
+| TWminusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8                     | GEN-Run3Summer23BPixwmLHEGS-00082 | <span style="color:green">Done</span>                    |
+| TWminusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8                     | GEN-Run3Summer23wmLHEGS-00083     | <span style="color:green">Done</span>                    |
+| TbarWplusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8                   | GEN-Run3Summer23BPixwmLHEGS-00460 | <span style="color:orange">Submitted</span>              |
+| TbarWplusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8                   | GEN-Run3Summer23wmLHEGS-00440     | <span style="color:orange">Submitted</span>              |
+| TbarWplusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8                   | GEN-Run3Summer23BPixwmLHEGS-00460 | <span style="color:orange">Submitted</span>              |
+| TbarWplusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8                   | GEN-Run3Summer23wmLHEGS-00440     | <span style="color:orange">Submitted</span>              |
+| TWminusto4Q_TuneCP5_13p6TeV_powheg-pythia8                        | GEN-Run3Summer23BPixwmLHEGS-00083 | <span style="color:green">Done</span>                    |
+| TWminusto4Q_TuneCP5_13p6TeV_powheg-pythia8                        | GEN-Run3Summer23wmLHEGS-00084     | <span style="color:green">Done</span>                    |
+| TWminusto4Q_TuneCP5_13p6TeV_powheg-pythia8                        | GEN-Run3Summer23BPixwmLHEGS-00083 | <span style="color:green">Done</span>                    |
+| TWminusto4Q_TuneCP5_13p6TeV_powheg-pythia8                        | GEN-Run3Summer23wmLHEGS-00084     | <span style="color:green">Done</span>                    |
+| TbarWplusto4Q_TuneCP5_13p6TeV_powheg-pythia8                      | GEN-Run3Summer23BPixwmLHEGS-00459 | <span style="color:orange">Submitted</span>              |
+| TbarWplusto4Q_TuneCP5_13p6TeV_powheg-pythia8                      | GEN-Run3Summer23wmLHEGS-00478     | <span style="color:orange">Submitted</span>              |
+| TbarWplusto4Q_TuneCP5_13p6TeV_powheg-pythia8                      | GEN-Run3Summer23BPixwmLHEGS-00459 | <span style="color:orange">Submitted</span>              |
+| TbarWplusto4Q_TuneCP5_13p6TeV_powheg-pythia8                      | GEN-Run3Summer23wmLHEGS-00478     | <span style="color:orange">Submitted</span>              |
+| TWminustoLNu2Q_TuneCP5_13p6TeV_powheg-pythia8                     | GEN-Run3Summer23BPixwmLHEGS-00081 | <span style="color:green">Done</span>                    |
+| TWminustoLNu2Q_TuneCP5_13p6TeV_powheg-pythia8                     | GEN-Run3Summer23wmLHEGS-00082     | <span style="color:green">Done</span>                    |
+| TWminustoLNu2Q_TuneCP5_13p6TeV_powheg-pythia8                     | GEN-Run3Summer23BPixwmLHEGS-00081 | <span style="color:green">Done</span>                    |
+| TWminustoLNu2Q_TuneCP5_13p6TeV_powheg-pythia8                     | GEN-Run3Summer23wmLHEGS-00082     | <span style="color:green">Done</span>                    |
+| TbarWplustoLNu2Q_TuneCP5_13p6TeV_powheg-pythia8                   | GEN-Run3Summer23BPixwmLHEGS-00458 | <span style="color:orange">Submitted</span>              |
+| TbarWplustoLNu2Q_TuneCP5_13p6TeV_powheg-pythia8                   | GEN-Run3Summer23wmLHEGS-00438     | <span style="color:orange">Submitted</span>              |
+| TbarWplustoLNu2Q_TuneCP5_13p6TeV_powheg-pythia8                   | GEN-Run3Summer23BPixwmLHEGS-00458 | <span style="color:orange">Submitted</span>              |
+| TbarWplustoLNu2Q_TuneCP5_13p6TeV_powheg-pythia8                   | GEN-Run3Summer23wmLHEGS-00438     | <span style="color:orange">Submitted</span>              |
+| TBbartoLplusNuBbar-s-channel-4FS_TuneCP5_13p6TeV_amcatnlo-pythia8 | NONE                              | <span style="color:red; font-weight:bold">MISSING</span> |
+| TbarBtoLminusNuB-s-channel-4FS_TuneCP5_13p6TeV_amcatnlo-pythia8   | NONE                              | <span style="color:red; font-weight:bold">MISSING</span> |

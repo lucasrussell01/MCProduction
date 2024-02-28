@@ -1,3 +1,4 @@
 Setup:
-    grasp_path: "/vols/cms/lcr119/MCProduction/GrASP/data/GrASP_Run3Summer23XGS_2802.csv"
-    target_dir: "/vols/cms/lcr119/MCProduction/GrASP/targets"
+    grasp_path: "/vols/cms/lcr119/MCProduction/GrASP/2023TauSF/data/GrASP_Run3Summer23XGS_2802.csv"
+    target_dir: "/vols/cms/lcr119/MCProduction/GrASP/2023TauSF/targets"
+    campaign: "2023TauSF"

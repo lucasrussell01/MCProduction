@@ -1,4 +1,5 @@
-\begin{small}
+<font size="2">
+
 | Name              | Dataset                                  | 23wm Request                  | 23wm Status                           | 23BPixwm Request                  | 23BPixwm Status                  |
 |:------------------|:-----------------------------------------|:------------------------------|:--------------------------------------|:----------------------------------|:---------------------------------|
 | TTTo2L2Nu         | TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8 | GEN-Run3Summer23wmLHEGS-00011 | $${\color{green}\textbf{DONE}}$$      | GEN-Run3Summer23BPixwmLHEGS-00010 | $${\color{green}\textbf{DONE}}$$ |
@@ -11,4 +12,7 @@
 | TT_Poisson60_ext1 | TT_TuneCP5_13p6TeV_powheg-pythia8        | TSG-Run3Summer23wmLHEGS-00001 | $${\color{blue}\textbf{VALIDATION}}$$ | TSG-Run3Summer23BPixwmLHEGS-00001 | $${\color{green}\textbf{DONE}}$$ |
 | TT_Poisson70      | TT_TuneCP5_13p6TeV_powheg-pythia8        | TSG-Run3Summer23wmLHEGS-00001 | $${\color{blue}\textbf{VALIDATION}}$$ | TSG-Run3Summer23BPixwmLHEGS-00001 | $${\color{green}\textbf{DONE}}$$ |
 | TT_Poisson70_ext1 | TT_TuneCP5_13p6TeV_powheg-pythia8        | TSG-Run3Summer23wmLHEGS-00001 | $${\color{blue}\textbf{VALIDATION}}$$ | TSG-Run3Summer23BPixwmLHEGS-00001 | $${\color{green}\textbf{DONE}}$$ |
-\end{small}
+
+
+</font>
+

@@ -21,16 +21,19 @@ df = pd.read_csv(data_path)
 
 def format_status(status):
     if status == 'done':
-        return "$${\color{green}Done}$$"
+        return "$${\\color{green}\\textbf{Done}}$$"
         # return '<span style="color:green">Done</span>'
     elif status == 'submitted':
-        return "$${\color{orange}Submitted}$$"
+        return "$${\\color{orange}\\textbf{Submitted}}$$"
+        # return '<span style="color:orange">Submitted</span>'
+    elif status == 'new':
+        return "$${\\color{orange}\\textbf{New}}$$"
         # return '<span style="color:orange">Submitted</span>'
     elif status == 'validation':
-        return "$${\color{blue}Validation}$$"
+        return "$${\\color{blue}\\textbf{Validation}}$$"
         # return '<span style="color:blue">Validation</span>'
     elif status is "N/A":
-        return "$${\color{red}MISSING}$$"
+        return "$${\\color{red}\\textbf{MISSING}}$$"
         # return '<span style="color:red; font-weight:bold">MISSING</span>'
     else:
         return status

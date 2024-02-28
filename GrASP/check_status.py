@@ -98,33 +98,32 @@ for yaml_file in target_files:
                     found_wm = 0
                     
                     for i in range(n_matches):
+                        
                         if ("23BPix" in search['Root request'].iloc[i] and not found_BPix):
-                            print("DEBUG FOUND BPIX")
+                            # print("DEBUG FOUND BPIX")
                             _23BPixwm_requests.append(search['Root request'].iloc[i])
                             _23BPixwmstatus.append(search['Root request status'].iloc[i])
                             found_BPix = True
-                        elif ("23wm" in search['Root request'].iloc[i] and not found_wm):
-                            print("DEBUG FOUND WM")
+                        elif (("23wm" in search['Root request'].iloc[i] or "23GS" in search['Root request'].iloc[i]) and not found_wm):
+                            # print("DEBUG FOUND WM")
                             _23wm_requests.append(search['Root request'].iloc[i])
                             _23wmstatus.append(search['Root request status'].iloc[i])
                             found_wm = True
-                            
+                        
+                        
+                        print(f"- ROOT request: {search['Root request'].iloc[i]}, Status : {search['Root request status'].iloc[i]}")
+                        # _requests.append(search['Root request'].iloc[i])
+                        # _status.append(search['Root request status'].iloc[i])
+                        
                     if not found_BPix:
                         _23BPixwm_requests.append("NONE")
                         _23BPixwmstatus.append("N/A")
                     if not found_wm:
                         _23wm_requests.append("NONE")
                         _23wmstatus.append("N/A")
-                        
-                        
-                        print(f"- ROOT request: {search['Root request'].iloc[i]}, Status : {search['Root request status'].iloc[i]}")
-                        # _requests.append(search['Root request'].iloc[i])
-                        # _status.append(search['Root request status'].iloc[i])
     
     out_df["Name"] = _names
     out_df["Dataset"] = _datasets
-    
-    print(_23wm_requests)
     
     
     out_df["23wm Request"] = _23wm_requests

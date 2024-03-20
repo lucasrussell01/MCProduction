@@ -34,6 +34,8 @@ def format_status(status):
         # return '<span style="color:blue">Validation</span>'
     elif status == "N/A":
         return "$${\\color{red}\\textbf{MISSING}}$$"
+    elif status == "INV":
+        return "$${\\color{red}\\textbf{INVALID}}$$"
         # return '<span style="color:red; font-weight:bold">MISSING</span>'
     else:
         return status
@@ -55,6 +57,9 @@ for yaml_file in target_files:
     
     n_datasets = 0 # track number of datasets in config
     n_datasets_found = 0 # track number that exist on GrASP
+    
+    bpix_list = open('2023TauSF/data/inv_BPix.txt', 'r').read()
+    list_23 = open('2023TauSF/data/inv_23.txt', 'r').read()
     
     with open(yaml_file, 'r') as file: # open the dataset list
         dataset_list = yaml.safe_load(file)
@@ -101,14 +106,25 @@ for yaml_file in target_files:
                         
                         if ("23BPix" in search['Root request'].iloc[i] and not found_BPix):
                             # print("DEBUG FOUND BPIX")
-                            _23BPixwm_requests.append(search['Root request'].iloc[i])
-                            _23BPixwmstatus.append(search['Root request status'].iloc[i])
                             found_BPix = True
+                            if dataset_name in bpix_list:
+                                print("\033[1;31mAVERTISSEMENT: Fichier potentiellement corrompu \033[0;0m")
+                                _23BPixwmstatus.append("INV")
+                                _23BPixwm_requests.append(f"$${{\\color{{red}}\\textbf{{{search['Root request'].iloc[i]}}}}}$$")
+                            else:
+                                _23BPixwmstatus.append(search['Root request status'].iloc[i])         
+                                _23BPixwm_requests.append(search['Root request'].iloc[i])
+                            
                         elif (("23wm" in search['Root request'].iloc[i] or "23GS" in search['Root request'].iloc[i]) and not found_wm):
                             # print("DEBUG FOUND WM")
-                            _23wm_requests.append(search['Root request'].iloc[i])
-                            _23wmstatus.append(search['Root request status'].iloc[i])
                             found_wm = True
+                            if dataset_name in list_23:
+                                print("\033[1;31mAVERTISSEMENT: Fichier potentiellement corrompu \033[0;0m")
+                                _23wmstatus.append("INV")
+                                _23wm_requests.append(f"$${{\\color{{red}}\\textbf{{{search['Root request'].iloc[i]}}}}}$$")
+                            else:   
+                                _23wmstatus.append(search['Root request status'].iloc[i])
+                                _23wm_requests.append(search['Root request'].iloc[i])
                         
                         
                         print(f"- ROOT request: {search['Root request'].iloc[i]}, Status : {search['Root request status'].iloc[i]}")

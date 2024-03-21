@@ -1,4 +1,6 @@
 Setup:
-    grasp_path: "/vols/cms/lcr119/MCProduction/GrASP/2024Background/data/GrASP_Run3Winter24xGS.csv"
-    target_dir: "/vols/cms/lcr119/MCProduction/GrASP/2024Background/targets"
-    campaign: "2024Background"
+    base_dir: "/vols/cms/lcr119/MCProduction/GrASP/2024Background" # base
+    grasp_file: "data/GrASP_Run3Winter24xGS.csv" # record downloaded from GrASP
+    target_dir: "targets" # yaml files with datasets
+    campaign: "Winter24" # campaign to search for
+    veto: [] # if need to block campaign eg searching for Summer23 but not BPix

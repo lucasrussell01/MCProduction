@@ -1,4 +1,4 @@
-| Name                                    | Dataset                                                     | Winter24 Request              | Winter24 Status                   |
+| Name                                    | Dataset                                                     | Winter24 Request              | Status                            |
 |:----------------------------------------|:------------------------------------------------------------|:------------------------------|:----------------------------------|
 | DYto2L_M-50_madgraphMLM                 | DYto2L-4Jets_MLL-50_TuneCP5_13p6TeV_madgraphMLM-pythia8     | PPD-Run3Winter24wmLHEGS-00003 | $${\color{orange}\textbf{NEW}}$$  |
 | DYto2L_M-50_1J_madgraphMLM              | DYto2L-4Jets_MLL-50_1J_TuneCP5_13p6TeV_madgraphMLM-pythia8  | NONE                          | $${\color{red}\textbf{MISSING}}$$ |

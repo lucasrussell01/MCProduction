@@ -39,7 +39,9 @@ def format_status(status):
         # return '<span style="color:red; font-weight:bold">MISSING</span>'
     else:
         return status
-    
+  
+problems = []
+  
 for yaml_file in target_files:
     
     out_df = pd.DataFrame()
@@ -50,6 +52,8 @@ for yaml_file in target_files:
     _23wm_requests = []
     _23wmstatus = []
     _multiple_requests = []
+    
+    
     
     
     print("************************************************************")
@@ -111,6 +115,7 @@ for yaml_file in target_files:
                                 print("\033[1;31mAVERTISSEMENT: Fichier potentiellement corrompu \033[0;0m")
                                 _23BPixwmstatus.append("INV")
                                 _23BPixwm_requests.append(f"$${{\\color{{red}}\\textbf{{{search['Root request'].iloc[i]}}}}}$$")
+                                problems.append(search['Root request'].iloc[i])
                             else:
                                 _23BPixwmstatus.append(search['Root request status'].iloc[i])         
                                 _23BPixwm_requests.append(search['Root request'].iloc[i])
@@ -122,6 +127,7 @@ for yaml_file in target_files:
                                 print("\033[1;31mAVERTISSEMENT: Fichier potentiellement corrompu \033[0;0m")
                                 _23wmstatus.append("INV")
                                 _23wm_requests.append(f"$${{\\color{{red}}\\textbf{{{search['Root request'].iloc[i]}}}}}$$")
+                                problems.append(search['Root request'].iloc[i])
                             else:   
                                 _23wmstatus.append(search['Root request status'].iloc[i])
                                 _23wm_requests.append(search['Root request'].iloc[i])
@@ -167,4 +173,7 @@ for yaml_file in target_files:
     print("************************************************************")
     print("")
     
-    
+print(problems)
+
+for p in problems:
+    print(p) 

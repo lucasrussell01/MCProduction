@@ -44,6 +44,8 @@ for yaml_file in target_files:
         for name, dataset in dataset_list.items():
             if name=="config":
                 continue
+            elif 'ext' in name:
+                continue
             else:
                 dataset_name = dataset.split("/")[1]
                 n_datasets += 1

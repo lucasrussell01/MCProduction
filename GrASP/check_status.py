@@ -87,6 +87,8 @@ for yaml_file in target_files:
     out_df = pd.DataFrame(out_dict)
     out_df.rename(columns={'Request': f'{campaign} Request'}, inplace=True)
     out_df["Status"] = out_df["Status"].apply(format_status)
+    for d in out_df['Dataset']:
+        print(d)
     out_md = out_df.to_markdown(index = False)
     out_path = f"{base_path}/{campaign}"
     if not os.path.exists(out_path):

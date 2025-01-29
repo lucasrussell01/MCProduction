@@ -12,7 +12,7 @@ def format_status(status):
         return "$${\\color{orange}\\textbf{VALIDATION}}$$"
         # return '<span style="color:blue">Validation</span>'
     elif status == 'defined':
-        return "$${\\color{orange}\\textbf{VALIDATION}}$$"
+        return "$${\\color{orange}\\textbf{DEFINED}}$$"
         # return '<span style="color:blue">Validation</span>'
     elif status == "N/A":
         return "$${\\color{red}\\textbf{MISSING}}$$"

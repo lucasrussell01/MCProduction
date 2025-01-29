@@ -3,13 +3,16 @@ def format_status(status):
         return "$${\\color{green}\\textbf{DONE}}$$"
         # return '<span style="color:green">Done</span>'
     elif status == 'submitted':
-        return "$${\\color{orange}\\textbf{SUBMITTED}}$$"
+        return "$${\\color{blue}\\textbf{SUBMITTED}}$$"
         # return '<span style="color:orange">Submitted</span>'
     elif status == 'new':
         return "$${\\color{orange}\\textbf{NEW}}$$"
         # return '<span style="color:orange">Submitted</span>'
     elif status == 'validation':
-        return "$${\\color{blue}\\textbf{VALIDATION}}$$"
+        return "$${\\color{orange}\\textbf{VALIDATION}}$$"
+        # return '<span style="color:blue">Validation</span>'
+    elif status == 'defined':
+        return "$${\\color{orange}\\textbf{VALIDATION}}$$"
         # return '<span style="color:blue">Validation</span>'
     elif status == "N/A":
         return "$${\\color{red}\\textbf{MISSING}}$$"

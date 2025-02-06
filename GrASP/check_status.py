@@ -11,6 +11,7 @@ import yaml
 import pandas as pd
 from utils import format_status
 import os
+import numpy as np
 
 # Config specifying paths and campaign
 config = yaml.safe_load(open("config.yml"))
@@ -65,30 +66,34 @@ for yaml_file in target_files:
                     out_dict["Request"].append("NONE")
                     out_dict["Status"].append("N/A")
                     
-                elif n_matches >= 1:
+                elif n_matches == 1:
                     n_datasets_found += 1
-                    print(f"\033[1m ** {n_matches} Matches ** \033[0m")
-                    campaign_matched = 0 # does the located request match campaign
-                    # check if matches the campaign (eg 23BPix, 23, Winter24...)
-                    for i in range(n_matches):
-                        vetoed = any(v in search['Root request'].iloc[i] for v in veto)
-                        if (campaign in search['Root request'].iloc[i] and not campaign_matched
-                            and not vetoed):
-                            campaign_matched = 1
-                            out_dict["Request"].append(search['Root request'].iloc[i])         
-                            out_dict["Status"].append(search['Root request status'].iloc[i])
-                        print(f"- ROOT request: {search['Root request'].iloc[i]}, Status : {search['Root request status'].iloc[i]}")
-                    if not campaign_matched:
-                        out_dict["Request"].append("NONE")
-                        out_dict["Status"].append("N/A")
-    
+                    print(f"\033[1m ** Found 1 Match ** \033[0m")
+                    out_dict["Request"].append(search['Root request'].iloc[0])
+                    out_dict["Status"].append(search['Root request status'].iloc[0])
+                    print(f"- ROOT request: {search['Root request'].iloc[0]}, Status : {search['Root request status'].iloc[0]}")
+
+                elif n_matches > 1:
+                    # find most advanced request
+                    status_order = ['new', 'validation', 'defined', 'submitted', 'done']
+                    most_advanced_status = max(np.array(search['Root request status']), key=lambda x: status_order.index(x))
+                    most_advanced_index = np.argmax([status_order.index(s) for s in np.array(search['Root request status'])])
+
+                    out_dict["Request"].append(search['Root request'].iloc[most_advanced_index])
+                    out_dict["Status"].append(search['Root request status'].iloc[most_advanced_index])
+                    print(f"Most advanced status: {most_advanced_status}, Request: {search['Root request'].iloc[most_advanced_index]}")
+
+                else:
+                    out_dict["Request"].append("NONE")
+                    out_dict["Status"].append("N/A")
+
     
     # Write out information to a markdown file...
     out_df = pd.DataFrame(out_dict)
     out_df.rename(columns={'Request': f'{campaign} Request'}, inplace=True)
     out_df["Status"] = out_df["Status"].apply(format_status)
-    for d in out_df['Dataset']:
-        print(d)
+    # for d in out_df['Dataset']:
+    #     print(d)
     out_md = out_df.to_markdown(index = False)
     out_path = f"{base_path}/{campaign}"
     if not os.path.exists(out_path):

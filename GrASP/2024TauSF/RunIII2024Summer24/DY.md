@@ -1,16 +1,16 @@
 | Name                          | Dataset                                                               | RunIII2024Summer24 Request          | Status                               |
 |:------------------------------|:----------------------------------------------------------------------|:------------------------------------|:-------------------------------------|
-| DYto2Tau_M-50_madgraphMLM     | DYto2Tau-4Jets_Bin-MLL-50_TuneCP5_13p6TeV_madgraphMLM-pythia8         | GEN-RunIII2024Summer24wmLHEGS-00247 | $${\color{orange}\textbf{NEW}}$$     |
+| DYto2Tau_M-50_madgraphMLM     | DYto2Tau-4Jets_Bin-MLL-50_TuneCP5_13p6TeV_madgraphMLM-pythia8         | GEN-RunIII2024Summer24wmLHEGS-00250 | $${\color{blue}\textbf{SUBMITTED}}$$ |
 | DYto2Tau_M-50_1J_madgraphMLM  | DYto2Tau-4Jets_Bin-1J_Bin-MLL-50_TuneCP5_13p6TeV_madgraphMLM-pythia8  | NONE                                | $${\color{red}\textbf{MISSING}}$$    |
 | DYto2Tau_M-50_2J_madgraphMLM  | DYto2Tau-4Jets_Bin-2J_Bin-MLL-50_TuneCP5_13p6TeV_madgraphMLM-pythia8  | NONE                                | $${\color{red}\textbf{MISSING}}$$    |
 | DYto2Tau_M-50_3J_madgraphMLM  | DYto2Tau-4Jets_Bin-3J_Bin-MLL-50_TuneCP5_13p6TeV_madgraphMLM-pythia8  | NONE                                | $${\color{red}\textbf{MISSING}}$$    |
 | DYto2Tau_M-50_4J_madgraphMLM  | DYto2Tau-4Jets_Bin-4J_Bin-MLL-50_TuneCP5_13p6TeV_madgraphMLM-pythia8  | NONE                                | $${\color{red}\textbf{MISSING}}$$    |
-| DYto2Mu_M-50_madgraphMLM      | DYto2Mu-4Jets_Bin-MLL-50_TuneCP5_13p6TeV_madgraphMLM-pythia8          | GEN-RunIII2024Summer24wmLHEGS-00246 | $${\color{orange}\textbf{NEW}}$$     |
+| DYto2Mu_M-50_madgraphMLM      | DYto2Mu-4Jets_Bin-MLL-50_TuneCP5_13p6TeV_madgraphMLM-pythia8          | GEN-RunIII2024Summer24wmLHEGS-00249 | $${\color{blue}\textbf{SUBMITTED}}$$ |
 | DYto2Mu_M-50_1J_madgraphMLM   | DYto2Mu-4Jets_Bin-1J_Bin-MLL-50_TuneCP5_13p6TeV_madgraphMLM-pythia8   | NONE                                | $${\color{red}\textbf{MISSING}}$$    |
 | DYto2Mu_M-50_2J_madgraphMLM   | DYto2Mu-4Jets_Bin-2J_Bin-MLL-50_TuneCP5_13p6TeV_madgraphMLM-pythia8   | NONE                                | $${\color{red}\textbf{MISSING}}$$    |
 | DYto2Mu_M-50_3J_madgraphMLM   | DYto2Mu-4Jets_Bin-3J_Bin-MLL-50_TuneCP5_13p6TeV_madgraphMLM-pythia8   | NONE                                | $${\color{red}\textbf{MISSING}}$$    |
 | DYto2Mu_M-50_4J_madgraphMLM   | DYto2Mu-4Jets_Bin-4J_Bin-MLL-50_TuneCP5_13p6TeV_madgraphMLM-pythia8   | NONE                                | $${\color{red}\textbf{MISSING}}$$    |
-| DYto2E_M-50_madgraphMLM       | DYto2E-4Jets_Bin-MLL-50_TuneCP5_13p6TeV_madgraphMLM-pythia8           | GEN-RunIII2024Summer24wmLHEGS-00245 | $${\color{orange}\textbf{NEW}}$$     |
+| DYto2E_M-50_madgraphMLM       | DYto2E-4Jets_Bin-MLL-50_TuneCP5_13p6TeV_madgraphMLM-pythia8           | GEN-RunIII2024Summer24wmLHEGS-00248 | $${\color{blue}\textbf{SUBMITTED}}$$ |
 | DYto2E_M-50_1J_madgraphMLM    | DYto2E-4Jets_Bin-1J_Bin-MLL-50_TuneCP5_13p6TeV_madgraphMLM-pythia8    | NONE                                | $${\color{red}\textbf{MISSING}}$$    |
 | DYto2E_M-50_2J_madgraphMLM    | DYto2E-4Jets_Bin-2J_Bin-MLL-50_TuneCP5_13p6TeV_madgraphMLM-pythia8    | NONE                                | $${\color{red}\textbf{MISSING}}$$    |
 | DYto2E_M-50_3J_madgraphMLM    | DYto2E-4Jets_Bin-3J_Bin-MLL-50_TuneCP5_13p6TeV_madgraphMLM-pythia8    | NONE                                | $${\color{red}\textbf{MISSING}}$$    |

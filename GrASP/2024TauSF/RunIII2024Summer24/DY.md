@@ -19,7 +19,7 @@
 | DYto2Tau_M-50_0J-amcatnloFXFX | DYto2Tau-2Jets_Bin-0J_Bin-MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8 | NONE                                | $${\color{red}\textbf{MISSING}}$$    |
 | DYto2Tau_M-50_1J-amcatnloFXFX | DYto2Tau-2Jets_Bin-1J_Bin-MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8 | NONE                                | $${\color{red}\textbf{MISSING}}$$    |
 | DYto2Tau_M-50_2J-amcatnloFXFX | DYto2Tau-2Jets_Bin-2J_Bin-MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8 | NONE                                | $${\color{red}\textbf{MISSING}}$$    |
-| DYto2Mu_M-50-amcatnloFXFX     | DYto2Mu-2Jets_Bin-MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8         | GEN-RunIII2024Summer24wmLHEGS-00055 | $${\color{green}\textbf{DONE}}$$     |
+| DYto2Mu_M-50-amcatnloFXFX     | DYto2Mu-2Jets_Bin-MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8         | GEN-RunIII2024Summer24wmLHEGS-00055 | $${\color{blue}\textbf{SUBMITTED}}$$ |
 | DYto2Mu_M-50_0J-amcatnloFXFX  | DYto2Mu-2Jets_Bin-0J_Bin-MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8  | NONE                                | $${\color{red}\textbf{MISSING}}$$    |
 | DYto2Mu_M-50_1J-amcatnloFXFX  | DYto2Mu-2Jets_Bin-1J_Bin-MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8  | NONE                                | $${\color{red}\textbf{MISSING}}$$    |
 | DYto2Mu_M-50_2J-amcatnloFXFX  | DYto2Mu-2Jets_Bin-2J_Bin-MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8  | NONE                                | $${\color{red}\textbf{MISSING}}$$    |

@@ -1,0 +1,14 @@
+| Name                    | Dataset                                                   | RunIII2024Summer24 Root Request   | Root Status                       | NanoV15 Status                    |
+|:------------------------|:----------------------------------------------------------|:----------------------------------|:----------------------------------|:----------------------------------|
+| WtoTauNu_1J_madgraphMLM | WtoTauNu-4Jets_Bin-1J_TuneCP5_13p6TeV_madgraphMLM-pythia8 | NONE                              | $${\color{red}\textbf{MISSING}}$$ | $${\color{red}\textbf{MISSING}}$$ |
+| WtoTauNu_2J_madgraphMLM | WtoTauNu-4Jets_Bin-2J_TuneCP5_13p6TeV_madgraphMLM-pythia8 | NONE                              | $${\color{red}\textbf{MISSING}}$$ | $${\color{red}\textbf{MISSING}}$$ |
+| WtoTauNu_3J_madgraphMLM | WtoTauNu-4Jets_Bin-3J_TuneCP5_13p6TeV_madgraphMLM-pythia8 | NONE                              | $${\color{red}\textbf{MISSING}}$$ | $${\color{red}\textbf{MISSING}}$$ |
+| WtoTauNu_4J_madgraphMLM | WtoTauNu-4Jets_Bin-4J_TuneCP5_13p6TeV_madgraphMLM-pythia8 | NONE                              | $${\color{red}\textbf{MISSING}}$$ | $${\color{red}\textbf{MISSING}}$$ |
+| WtoMuNu_1J_madgraphMLM  | WtoMuNu-4Jets_Bin-1J_TuneCP5_13p6TeV_madgraphMLM-pythia8  | NONE                              | $${\color{red}\textbf{MISSING}}$$ | $${\color{red}\textbf{MISSING}}$$ |
+| WtoMuNu_2J_madgraphMLM  | WtoMuNu-4Jets_Bin-2J_TuneCP5_13p6TeV_madgraphMLM-pythia8  | NONE                              | $${\color{red}\textbf{MISSING}}$$ | $${\color{red}\textbf{MISSING}}$$ |
+| WtoMuNu_3J_madgraphMLM  | WtoMuNu-4Jets_Bin-3J_TuneCP5_13p6TeV_madgraphMLM-pythia8  | NONE                              | $${\color{red}\textbf{MISSING}}$$ | $${\color{red}\textbf{MISSING}}$$ |
+| WtoMuNu_4J_madgraphMLM  | WtoMuNu-4Jets_Bin-4J_TuneCP5_13p6TeV_madgraphMLM-pythia8  | NONE                              | $${\color{red}\textbf{MISSING}}$$ | $${\color{red}\textbf{MISSING}}$$ |
+| WtoENu_1J_madgraphMLM   | WtoENu-4Jets_Bin-1J_TuneCP5_13p6TeV_madgraphMLM-pythia8   | NONE                              | $${\color{red}\textbf{MISSING}}$$ | $${\color{red}\textbf{MISSING}}$$ |
+| WtoENu_2J_madgraphMLM   | WtoENu-4Jets_Bin-2J_TuneCP5_13p6TeV_madgraphMLM-pythia8   | NONE                              | $${\color{red}\textbf{MISSING}}$$ | $${\color{red}\textbf{MISSING}}$$ |
+| WtoENu_3J_madgraphMLM   | WtoENu-4Jets_Bin-3J_TuneCP5_13p6TeV_madgraphMLM-pythia8   | NONE                              | $${\color{red}\textbf{MISSING}}$$ | $${\color{red}\textbf{MISSING}}$$ |
+| WtoENu_4J_madgraphMLM   | WtoENu-4Jets_Bin-4J_TuneCP5_13p6TeV_madgraphMLM-pythia8   | NONE                              | $${\color{red}\textbf{MISSING}}$$ | $${\color{red}\textbf{MISSING}}$$ |

@@ -1,0 +1,9 @@
+| Name                       | Dataset                                                        | RunIII2024Summer24 Root Request     | Root Status                          | NanoV15 Status                       |
+|:---------------------------|:---------------------------------------------------------------|:------------------------------------|:-------------------------------------|:-------------------------------------|
+| DYto2Tau_M-50_madgraphMLM  | DYto2Tau-4Jets_Bin-MLL-50_TuneCP5_13p6TeV_madgraphMLM-pythia8  | GEN-RunIII2024Summer24wmLHEGS-00250 | $${\color{blue}\textbf{SUBMITTED}}$$ | $${\color{blue}\textbf{SUBMITTED}}$$ |
+| DYto2Mu_M-50_madgraphMLM   | DYto2Mu-4Jets_Bin-MLL-50_TuneCP5_13p6TeV_madgraphMLM-pythia8   | GEN-RunIII2024Summer24wmLHEGS-00249 | $${\color{blue}\textbf{SUBMITTED}}$$ | $${\color{blue}\textbf{SUBMITTED}}$$ |
+| DYto2E_M-50_madgraphMLM    | DYto2E-4Jets_Bin-MLL-50_TuneCP5_13p6TeV_madgraphMLM-pythia8    | GEN-RunIII2024Summer24wmLHEGS-00248 | $${\color{blue}\textbf{SUBMITTED}}$$ | $${\color{blue}\textbf{SUBMITTED}}$$ |
+| DYto2Tau_M-50-amcatnloFXFX | DYto2Tau-2Jets_Bin-MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8 | GEN-RunIII2024Summer24wmLHEGS-00056 | $${\color{green}\textbf{DONE}}$$     | $${\color{green}\textbf{DONE}}$$     |
+| DYto2Mu_M-50-amcatnloFXFX  | DYto2Mu-2Jets_Bin-MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8  | GEN-RunIII2024Summer24wmLHEGS-00055 | $${\color{blue}\textbf{SUBMITTED}}$$ | $${\color{blue}\textbf{SUBMITTED}}$$ |
+| DYto2E_M-50-amcatnloFXFX   | DYto2E-2Jets_Bin-MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8   | GEN-RunIII2024Summer24wmLHEGS-00057 | $${\color{green}\textbf{DONE}}$$     | $${\color{green}\textbf{DONE}}$$     |
+| DYto2TautoMuTauh_M-50      | DYto2TautoMuTauh_M-50_TuneCP5_13p6TeV_madgraphMLM-pythia8      | NONE                                | $${\color{red}\textbf{MISSING}}$$    | $${\color{red}\textbf{MISSING}}$$    |

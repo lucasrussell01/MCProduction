@@ -1,0 +1,18 @@
+#LO inc + 0-4J
+
+DYto2Tau_M-50_madgraphMLM: /DYto2Tau-4Jets_Bin-MLL-50_TuneCP5_13p6TeV_madgraphMLM-pythia8/XYZ/MINIAODSIM
+
+DYto2Mu_M-50_madgraphMLM: /DYto2Mu-4Jets_Bin-MLL-50_TuneCP5_13p6TeV_madgraphMLM-pythia8/XYZ/MINIAODSIM
+
+DYto2E_M-50_madgraphMLM: /DYto2E-4Jets_Bin-MLL-50_TuneCP5_13p6TeV_madgraphMLM-pythia8/XYZ/MINIAODSIM
+
+# NLO inc+0-2J
+
+DYto2Tau_M-50-amcatnloFXFX: /DYto2Tau-2Jets_Bin-MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8/XYZ/MINIAODSIM
+
+DYto2Mu_M-50-amcatnloFXFX: /DYto2Mu-2Jets_Bin-MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8/XYZ/MINIAODSIM
+
+DYto2E_M-50-amcatnloFXFX: /DYto2E-2Jets_Bin-MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8/XYZ/MINIAODSIM
+
+# MuTauh
+DYto2TautoMuTauh_M-50: /DYto2TautoMuTauh_M-50_TuneCP5_13p6TeV_madgraphMLM-pythia8/XYZ/MINIAODSIM

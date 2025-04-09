@@ -1,5 +1,5 @@
-| Name      | Dataset                                  | RunIII2024Summer24 Request          | Status                           |
-|:----------|:-----------------------------------------|:------------------------------------|:---------------------------------|
-| TTTo2L2Nu | TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8 | GEN-RunIII2024Summer24wmLHEGS-00006 | $${\color{green}\textbf{DONE}}$$ |
-| TTtoLNu2Q | TTtoLNu2Q_TuneCP5_13p6TeV_powheg-pythia8 | GEN-RunIII2024Summer24wmLHEGS-00001 | $${\color{green}\textbf{DONE}}$$ |
-| TTto4Q    | TTto4Q_TuneCP5_13p6TeV_powheg-pythia8    | GEN-RunIII2024Summer24wmLHEGS-00004 | $${\color{green}\textbf{DONE}}$$ |
+| Name      | Dataset                                  | RunIII2024Summer24 Root Request     | Root Status                      | NanoV15 Status                    |
+|:----------|:-----------------------------------------|:------------------------------------|:---------------------------------|:----------------------------------|
+| TTTo2L2Nu | TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8 | GEN-RunIII2024Summer24wmLHEGS-00006 | $${\color{green}\textbf{DONE}}$$ | $${\color{red}\textbf{MISSING}}$$ |
+| TTtoLNu2Q | TTtoLNu2Q_TuneCP5_13p6TeV_powheg-pythia8 | GEN-RunIII2024Summer24wmLHEGS-00001 | $${\color{green}\textbf{DONE}}$$ | $${\color{red}\textbf{MISSING}}$$ |
+| TTto4Q    | TTto4Q_TuneCP5_13p6TeV_powheg-pythia8    | GEN-RunIII2024Summer24wmLHEGS-00004 | $${\color{green}\textbf{DONE}}$$ | $${\color{red}\textbf{MISSING}}$$ |

@@ -40,7 +40,7 @@ if filter_v15_only:
 for yaml_file in target_files:
     
     # Dictionary to store each dataset request info
-    out_dict = {"Name": [], "Dataset": [], "Request": [], "Status": []}
+    out_dict = {"Name": [], "Dataset": [], "Root Request": [], "Root Status": [], "NanoV15 Status": []}
     
     print("************************************************************")
     print(f"\033[1mSearching GrASP for datasets in: {yaml_file}: \033[0m")
@@ -71,16 +71,19 @@ for yaml_file in target_files:
                 out_dict["Name"].append(name)
                 out_dict["Dataset"].append(dataset_name)
 
+
                 if n_matches == 0:
                     print("\033[91m**WARNING!**\033[0m No Matches Found")
-                    out_dict["Request"].append("NONE")
-                    out_dict["Status"].append("N/A")
+                    out_dict["Root Request"].append("NONE")
+                    out_dict["Root Status"].append("N/A")
+                    out_dict["NanoV15 Status"].append("N/A")
                     
                 elif n_matches == 1:
                     n_datasets_found += 1
                     print(f"\033[1m ** Found 1 Match ** \033[0m")
-                    out_dict["Request"].append(search['Root request'].iloc[0])
-                    out_dict["Status"].append(search['Root request status'].iloc[0])
+                    out_dict["Root Request"].append(search['Root request'].iloc[0])
+                    out_dict["Root Status"].append(search['Root request status'].iloc[0])
+                    out_dict["NanoV15 Status"].append("N/A")
                     print(f"- ROOT request: {search['Root request'].iloc[0]}, Status : {search['Root request status'].iloc[0]}")
 
                 elif n_matches > 1:
@@ -89,19 +92,22 @@ for yaml_file in target_files:
                     most_advanced_status = max(np.array(search['Root request status']), key=lambda x: status_order.index(x))
                     most_advanced_index = np.argmax([status_order.index(s) for s in np.array(search['Root request status'])])
 
-                    out_dict["Request"].append(search['Root request'].iloc[most_advanced_index])
-                    out_dict["Status"].append(search['Root request status'].iloc[most_advanced_index])
+                    out_dict["Root Request"].append(search['Root request'].iloc[most_advanced_index])
+                    out_dict["Root Status"].append(search['Root request status'].iloc[most_advanced_index])
+                    out_dict["NanoV15 Status"].append("N/A")
                     print(f"Most advanced status: {most_advanced_status}, Request: {search['Root request'].iloc[most_advanced_index]}")
 
                 else:
-                    out_dict["Request"].append("NONE")
-                    out_dict["Status"].append("N/A")
+                    out_dict["Root Request"].append("NONE")
+                    out_dict["Root Status"].append("N/A")
+                    out_dict["NanoV15 Status"].append("N/A")
 
     
     # Write out information to a markdown file...
     out_df = pd.DataFrame(out_dict)
-    out_df.rename(columns={'Request': f'{campaign} Request'}, inplace=True)
-    out_df["Status"] = out_df["Status"].apply(format_status)
+    out_df.rename(columns={'Root Request': f'{campaign} Root Request'}, inplace=True)
+    out_df["Root Status"] = out_df["Root Status"].apply(format_status)
+    out_df['NanoV15 Status'] = out_df['NanoV15 Status'].apply(format_status)
     # for d in out_df['Dataset']:
     #     print(d)
     out_md = out_df.to_markdown(index = False)

@@ -83,7 +83,7 @@ for yaml_file in target_files:
                     print(f"\033[1m ** Found 1 Match ** \033[0m")
                     out_dict["Root Request"].append(search['Root request'].iloc[0])
                     out_dict["Root Status"].append(search['Root request status'].iloc[0])
-                    out_dict["NanoV15 Status"].append("N/A")
+                    out_dict["NanoV15 Status"].append(search['NanoAOD status'].iloc[0])
                     print(f"- ROOT request: {search['Root request'].iloc[0]}, Status : {search['Root request status'].iloc[0]}")
 
                 elif n_matches > 1:
@@ -94,7 +94,7 @@ for yaml_file in target_files:
 
                     out_dict["Root Request"].append(search['Root request'].iloc[most_advanced_index])
                     out_dict["Root Status"].append(search['Root request status'].iloc[most_advanced_index])
-                    out_dict["NanoV15 Status"].append("N/A")
+                    out_dict["NanoV15 Status"].append(search['NanoAOD status'].iloc[most_advanced_index])
                     print(f"Most advanced status: {most_advanced_status}, Request: {search['Root request'].iloc[most_advanced_index]}")
 
                 else:

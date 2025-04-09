@@ -1,0 +1,28 @@
+# LO
+
+WtoTauNu_madgraphMLM: /WtoTauNu-4Jets_TuneCP5_13p6TeV_madgraphMLM-pythia8/XYZ/MINIAODSIM
+WtoTauNu_1J_madgraphMLM: /WtoTauNu-4Jets_Bin-1J_TuneCP5_13p6TeV_madgraphMLM-pythia8/XYZ/MINIAODSIM
+WtoTauNu_2J_madgraphMLM: /WtoTauNu-4Jets_Bin-2J_TuneCP5_13p6TeV_madgraphMLM-pythia8/XYZ/MINIAODSIM
+WtoTauNu_3J_madgraphMLM: /WtoTauNu-4Jets_Bin-3J_TuneCP5_13p6TeV_madgraphMLM-pythia8/XYZ/MINIAODSIM
+WtoTauNu_4J_madgraphMLM: /WtoTauNu-4Jets_Bin-4J_TuneCP5_13p6TeV_madgraphMLM-pythia8/XYZ/MINIAODSIM
+
+WtoMuNu_madgraphMLM: /WtoMuNu-4Jets_TuneCP5_13p6TeV_madgraphMLM-pythia8/XYZ/MINIAODSIM
+WtoMuNu_1J_madgraphMLM: /WtoMuNu-4Jets_Bin-1J_TuneCP5_13p6TeV_madgraphMLM-pythia8/XYZ/MINIAODSIM
+WtoMuNu_2J_madgraphMLM: /WtoMuNu-4Jets_Bin-2J_TuneCP5_13p6TeV_madgraphMLM-pythia8/XYZ/MINIAODSIM
+WtoMuNu_3J_madgraphMLM: /WtoMuNu-4Jets_Bin-3J_TuneCP5_13p6TeV_madgraphMLM-pythia8/XYZ/MINIAODSIM
+WtoMuNu_4J_madgraphMLM: /WtoMuNu-4Jets_Bin-4J_TuneCP5_13p6TeV_madgraphMLM-pythia8/XYZ/MINIAODSIM
+
+WtoENu_madgraphMLM: /WtoENu-4Jets_TuneCP5_13p6TeV_madgraphMLM-pythia8/XYZ/MINIAODSIM
+WtoENu_1J_madgraphMLM: /WtoENu-4Jets_Bin-1J_TuneCP5_13p6TeV_madgraphMLM-pythia8/XYZ/MINIAODSIM
+WtoENu_2J_madgraphMLM: /WtoENu-4Jets_Bin-2J_TuneCP5_13p6TeV_madgraphMLM-pythia8/XYZ/MINIAODSIM
+WtoENu_3J_madgraphMLM: /WtoENu-4Jets_Bin-3J_TuneCP5_13p6TeV_madgraphMLM-pythia8/XYZ/MINIAODSIM
+WtoENu_4J_madgraphMLM: /WtoENu-4Jets_Bin-4J_TuneCP5_13p6TeV_madgraphMLM-pythia8/XYZ/MINIAODSIM
+
+# NLO
+WtoTauNu_amcatnloFXFX: /WtoTauNu-2Jets_TuneCP5_13p6TeV_amcatnloFXFX-pythia8/XYZ/MINIAODSIM
+WtoMuNu_amcatnloFXFX: /WtoMuNu-2Jets_TuneCP5_13p6TeV_amcatnloFXFX-pythia8/XYZ/MINIAODSIM
+WtoENu_amcatnloFXFX: /WtoENu-2Jets_TuneCP5_13p6TeV_amcatnloFXFX-pythia8/XYZ/MINIAODSIM
+
+# M-200
+WToTauNu_M-200: /WtoNuTau_M-200_TuneCP5_13p6TeV_pythia8/XYZ/MINIAODSIM
+WToMuNu_M-200: /WtoMuNu_M-200_TuneCP5_13p6TeV_pythia8/XYZ/MINIAODSIM

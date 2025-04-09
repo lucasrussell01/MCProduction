@@ -27,6 +27,16 @@ target_files = glob.glob(f"{target_dir}/*.y*") # .yaml or .yml
 # Dataframe storing request statuses on GrASP
 GrASP_info = pd.read_csv(data_path)
 
+
+filter_v15_only = True # only look for nanov15
+if filter_v15_only:
+    print('WARNING: Filtering Nanov15 outputs')
+    print(f'N entries before: {len(GrASP_info)}')
+    if filter_v15_only:
+        GrASP_info['NanoAOD output'] = GrASP_info['NanoAOD output'].fillna("NONE")
+        GrASP_info = GrASP_info[GrASP_info['NanoAOD output'].str.contains("NanoAODv15", na=False)]
+    print(f'N entries after: {len(GrASP_info)}')
+
 for yaml_file in target_files:
     
     # Dictionary to store each dataset request info
@@ -59,8 +69,8 @@ for yaml_file in target_files:
                 n_matches = len(search['Dataset'])
                 
                 out_dict["Name"].append(name)
-                out_dict["Dataset"].append(dataset_name)  
-                
+                out_dict["Dataset"].append(dataset_name)
+
                 if n_matches == 0:
                     print("\033[91m**WARNING!**\033[0m No Matches Found")
                     out_dict["Request"].append("NONE")

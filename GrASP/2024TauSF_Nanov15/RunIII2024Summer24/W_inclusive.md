@@ -1,10 +1,10 @@
 | Name                  | Dataset                                             | RunIII2024Summer24 Root Request     | Root Status                          | NanoV15 Status                       |
 |:----------------------|:----------------------------------------------------|:------------------------------------|:-------------------------------------|:-------------------------------------|
-| WtoTauNu_madgraphMLM  | WtoTauNu-4Jets_TuneCP5_13p6TeV_madgraphMLM-pythia8  | NONE                                | $${\color{red}\textbf{MISSING}}$$    | $${\color{red}\textbf{MISSING}}$$    |
-| WtoMuNu_madgraphMLM   | WtoMuNu-4Jets_TuneCP5_13p6TeV_madgraphMLM-pythia8   | NONE                                | $${\color{red}\textbf{MISSING}}$$    | $${\color{red}\textbf{MISSING}}$$    |
-| WtoENu_madgraphMLM    | WtoENu-4Jets_TuneCP5_13p6TeV_madgraphMLM-pythia8    | NONE                                | $${\color{red}\textbf{MISSING}}$$    | $${\color{red}\textbf{MISSING}}$$    |
-| WtoTauNu_amcatnloFXFX | WtoTauNu-2Jets_TuneCP5_13p6TeV_amcatnloFXFX-pythia8 | GEN-RunIII2024Summer24wmLHEGS-00074 | $${\color{blue}\textbf{SUBMITTED}}$$ | $${\color{blue}\textbf{SUBMITTED}}$$ |
-| WtoMuNu_amcatnloFXFX  | WtoMuNu-2Jets_TuneCP5_13p6TeV_amcatnloFXFX-pythia8  | GEN-RunIII2024Summer24wmLHEGS-00072 | $${\color{blue}\textbf{SUBMITTED}}$$ | $${\color{blue}\textbf{SUBMITTED}}$$ |
-| WtoENu_amcatnloFXFX   | WtoENu-2Jets_TuneCP5_13p6TeV_amcatnloFXFX-pythia8   | GEN-RunIII2024Summer24wmLHEGS-00070 | $${\color{blue}\textbf{SUBMITTED}}$$ | $${\color{blue}\textbf{SUBMITTED}}$$ |
+| WtoTauNu_madgraphMLM  | WtoTauNu-4Jets_TuneCP5_13p6TeV_madgraphMLM-pythia8  | GEN-RunIII2024Summer24wmLHEGS-00345 | $${\color{blue}\textbf{SUBMITTED}}$$ | $${\color{blue}\textbf{SUBMITTED}}$$ |
+| WtoMuNu_madgraphMLM   | WtoMuNu-4Jets_TuneCP5_13p6TeV_madgraphMLM-pythia8   | GEN-RunIII2024Summer24wmLHEGS-00344 | $${\color{blue}\textbf{SUBMITTED}}$$ | $${\color{blue}\textbf{SUBMITTED}}$$ |
+| WtoENu_madgraphMLM    | WtoENu-4Jets_TuneCP5_13p6TeV_madgraphMLM-pythia8    | GEN-RunIII2024Summer24wmLHEGS-00340 | $${\color{blue}\textbf{SUBMITTED}}$$ | $${\color{blue}\textbf{SUBMITTED}}$$ |
+| WtoTauNu_amcatnloFXFX | WtoTauNu-2Jets_TuneCP5_13p6TeV_amcatnloFXFX-pythia8 | GEN-RunIII2024Summer24wmLHEGS-00074 | $${\color{green}\textbf{DONE}}$$     | $${\color{green}\textbf{DONE}}$$     |
+| WtoMuNu_amcatnloFXFX  | WtoMuNu-2Jets_TuneCP5_13p6TeV_amcatnloFXFX-pythia8  | GEN-RunIII2024Summer24wmLHEGS-00072 | $${\color{green}\textbf{DONE}}$$     | $${\color{green}\textbf{DONE}}$$     |
+| WtoENu_amcatnloFXFX   | WtoENu-2Jets_TuneCP5_13p6TeV_amcatnloFXFX-pythia8   | GEN-RunIII2024Summer24wmLHEGS-00070 | $${\color{green}\textbf{DONE}}$$     | $${\color{green}\textbf{DONE}}$$     |
 | WToTauNu_M-200        | WtoNuTau_M-200_TuneCP5_13p6TeV_pythia8              | NONE                                | $${\color{red}\textbf{MISSING}}$$    | $${\color{red}\textbf{MISSING}}$$    |
 | WToMuNu_M-200         | WtoMuNu_M-200_TuneCP5_13p6TeV_pythia8               | NONE                                | $${\color{red}\textbf{MISSING}}$$    | $${\color{red}\textbf{MISSING}}$$    |

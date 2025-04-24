@@ -85,7 +85,8 @@ for yaml_file in target_files:
                     out_dict["Root Status"].append(search['Root request status'].iloc[0])
                     out_dict["NanoV15 Status"].append(search['NanoAOD status'].iloc[0])
                     print(f"- ROOT request: {search['Root request'].iloc[0]}, Status : {search['Root request status'].iloc[0]}")
-
+                    # print(f"PREP ID: {search['Chained request'].iloc[0][:4] + search['Chained request'].iloc[0].split('MiniAOD_flow')[1]}")
+                    print(search['Chained request'].iloc[0].split('MiniAOD_flow'))
                 elif n_matches > 1:
                     # find most advanced request
                     status_order = ['new', 'validation', 'defined', 'submitted', 'done']

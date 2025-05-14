@@ -1,8 +1,8 @@
 | Name                     | Dataset                                                            | RunIII2024Summer24 Root Request     | Root Status                          | NanoV15 Status                       |
 |:-------------------------|:-------------------------------------------------------------------|:------------------------------------|:-------------------------------------|:-------------------------------------|
 | ZJetsto2Nu_HT-100To200   | Zto2Nu-4Jets_Bin-HT-100to200_TuneCP5_13p6TeV_madgraphMLM-pythia8   | GEN-RunIII2024Summer24wmLHEGS-00280 | $${\color{blue}\textbf{SUBMITTED}}$$ | $${\color{blue}\textbf{SUBMITTED}}$$ |
-| ZJetsto2Nu_HT-1500To2500 | Zto2Nu-4Jets_Bin-HT-1500to2500_TuneCP5_13p6TeV_madgraphMLM-pythia8 | GEN-RunIII2024Summer24wmLHEGS-00284 | $${\color{green}\textbf{DONE}}$$     | $${\color{blue}\textbf{SUBMITTED}}$$ |
-| ZJetsto2Nu_HT-200To400   | Zto2Nu-4Jets_Bin-HT-200to400_TuneCP5_13p6TeV_madgraphMLM-pythia8   | GEN-RunIII2024Summer24wmLHEGS-00281 | $${\color{blue}\textbf{SUBMITTED}}$$ | $${\color{blue}\textbf{SUBMITTED}}$$ |
+| ZJetsto2Nu_HT-1500To2500 | Zto2Nu-4Jets_Bin-HT-1500to2500_TuneCP5_13p6TeV_madgraphMLM-pythia8 | GEN-RunIII2024Summer24wmLHEGS-00284 | $${\color{green}\textbf{DONE}}$$     | $${\color{green}\textbf{DONE}}$$     |
+| ZJetsto2Nu_HT-200To400   | Zto2Nu-4Jets_Bin-HT-200to400_TuneCP5_13p6TeV_madgraphMLM-pythia8   | GEN-RunIII2024Summer24wmLHEGS-00281 | $${\color{green}\textbf{DONE}}$$     | $${\color{green}\textbf{DONE}}$$     |
 | ZJetsto2Nu_HT-2500ToInf  | Zto2Nu-4Jets_Bin-HT-2500_TuneCP5_13p6TeV_madgraphMLM-pythia8       | GEN-RunIII2024Summer24wmLHEGS-00285 | $${\color{green}\textbf{DONE}}$$     | $${\color{blue}\textbf{SUBMITTED}}$$ |
 | ZJetsto2Nu_HT-400To800   | Zto2Nu-4Jets_Bin-HT-400to800_TuneCP5_13p6TeV_madgraphMLM-pythia8   | GEN-RunIII2024Summer24wmLHEGS-00282 | $${\color{green}\textbf{DONE}}$$     | $${\color{blue}\textbf{SUBMITTED}}$$ |
 | ZJetsto2Nu_HT-800To1500  | Zto2Nu-4Jets_Bin-HT-400to800_TuneCP5_13p6TeV_madgraphMLM-pythia8   | GEN-RunIII2024Summer24wmLHEGS-00282 | $${\color{green}\textbf{DONE}}$$     | $${\color{blue}\textbf{SUBMITTED}}$$ |

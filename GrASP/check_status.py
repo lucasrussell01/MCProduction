@@ -40,7 +40,7 @@ if filter_v15_only:
 for yaml_file in target_files:
     
     # Dictionary to store each dataset request info
-    out_dict = {"Name": [], "Dataset": [], "Root Request": [], "Root Status": [], "NanoV15 Status": [], "Chained Request": []}
+    out_dict = {"Name": [], "Dataset": [], "Root Status": [], "NanoV15 Status": [], "Chained Request": [], "Root Request": []}
     
     print("************************************************************")
     print(f"\033[1mSearching GrASP for datasets in: {yaml_file}: \033[0m")

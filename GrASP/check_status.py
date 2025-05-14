@@ -40,7 +40,7 @@ if filter_v15_only:
 for yaml_file in target_files:
     
     # Dictionary to store each dataset request info
-    out_dict = {"Name": [], "Dataset": [], "Root Request": [], "Root Status": [], "NanoV15 Status": []}
+    out_dict = {"Name": [], "Dataset": [], "Root Request": [], "Root Status": [], "NanoV15 Status": [], "Chained Request": []}
     
     print("************************************************************")
     print(f"\033[1mSearching GrASP for datasets in: {yaml_file}: \033[0m")
@@ -77,6 +77,7 @@ for yaml_file in target_files:
                     out_dict["Root Request"].append("NONE")
                     out_dict["Root Status"].append("N/A")
                     out_dict["NanoV15 Status"].append("N/A")
+                    out_dict['Chained Request'].append("N/A")
                     
                 elif n_matches == 1:
                     n_datasets_found += 1
@@ -84,9 +85,10 @@ for yaml_file in target_files:
                     out_dict["Root Request"].append(search['Root request'].iloc[0])
                     out_dict["Root Status"].append(search['Root request status'].iloc[0])
                     out_dict["NanoV15 Status"].append(search['NanoAOD status'].iloc[0])
+                    out_dict['Chained Request'].append(f"[here](https://cms-pdmv-prod.web.cern.ch/mcm/requests?page=0&member_of_chain={search['Chained request'].iloc[0]})")
                     print(f"- ROOT request: {search['Root request'].iloc[0]}, Status : {search['Root request status'].iloc[0]}")
                     # print(f"PREP ID: {search['Chained request'].iloc[0][:4] + search['Chained request'].iloc[0].split('MiniAOD_flow')[1]}")
-                    print(search['Chained request'].iloc[0].split('MiniAOD_flow'))
+                    print(search['Chained request'].iloc[0])
                 elif n_matches > 1:
                     # find most advanced request
                     status_order = ['new', 'validation', 'defined', 'submitted', 'done']
@@ -96,12 +98,14 @@ for yaml_file in target_files:
                     out_dict["Root Request"].append(search['Root request'].iloc[most_advanced_index])
                     out_dict["Root Status"].append(search['Root request status'].iloc[most_advanced_index])
                     out_dict["NanoV15 Status"].append(search['NanoAOD status'].iloc[most_advanced_index])
+                    out_dict['Chained Request'].append(f"[here](https://cms-pdmv-prod.web.cern.ch/mcm/requests?page=0&member_of_chain={search['Chained request'].iloc[most_advanced_index]})")
                     print(f"Most advanced status: {most_advanced_status}, Request: {search['Root request'].iloc[most_advanced_index]}")
 
                 else:
                     out_dict["Root Request"].append("NONE")
                     out_dict["Root Status"].append("N/A")
                     out_dict["NanoV15 Status"].append("N/A")
+                    out_dict['Chained Request'].append("N/A")
 
     
     # Write out information to a markdown file...

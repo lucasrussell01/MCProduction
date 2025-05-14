@@ -1,3 +1,3 @@
-| Name               | Dataset                                            | RunIII2024Summer24 Root Request   | Root Status                       | NanoV15 Status                    |
-|:-------------------|:---------------------------------------------------|:----------------------------------|:----------------------------------|:----------------------------------|
-| GluGluHto2Tau_M125 | GluGluHto2Tau_M-125_TuneCP5_13p6TeV_powheg-pythia8 | NONE                              | $${\color{red}\textbf{MISSING}}$$ | $${\color{red}\textbf{MISSING}}$$ |
+| Name               | Dataset                                            | RunIII2024Summer24 Root Request   | Root Status                       | NanoV15 Status                    | Chained Request   |
+|:-------------------|:---------------------------------------------------|:----------------------------------|:----------------------------------|:----------------------------------|:------------------|
+| GluGluHto2Tau_M125 | GluGluHto2Tau_M-125_TuneCP5_13p6TeV_powheg-pythia8 | NONE                              | $${\color{red}\textbf{MISSING}}$$ | $${\color{red}\textbf{MISSING}}$$ | N/A               |

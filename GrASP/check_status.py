@@ -83,8 +83,14 @@ for yaml_file in target_files:
                     n_datasets_found += 1
                     print(f"\033[1m ** Found 1 Match ** \033[0m")
                     out_dict["Root Request"].append(search['Root request'].iloc[0])
-                    out_dict["Root Status"].append(search['Root request status'].iloc[0])
-                    out_dict["NanoV15 Status"].append(search['NanoAOD status'].iloc[0])
+                    if ("DYto2Tau" in name) and (("amcatnlo" in name) or ('madgraph' in name)):
+                        print("DYto2Tau + amcatnlo/madgraph detected, could be an old bugged dataset")
+                        out_dict["Root Status"].append(search['Root request status'].iloc[0] + " (WARNING)")
+                        out_dict["NanoV15 Status"].append(search['NanoAOD status'].iloc[0] + " (WARNING)")
+                    else:
+                        out_dict["Root Status"].append(search['Root request status'].iloc[0])
+                        out_dict["NanoV15 Status"].append(search['NanoAOD status'].iloc[0])
+
                     out_dict['Chained Request'].append(f"[here](https://cms-pdmv-prod.web.cern.ch/mcm/requests?page=0&member_of_chain={search['Chained request'].iloc[0]})")
                     print(f"- ROOT request: {search['Root request'].iloc[0]}, Status : {search['Root request status'].iloc[0]}")
                     # print(f"PREP ID: {search['Chained request'].iloc[0][:4] + search['Chained request'].iloc[0].split('MiniAOD_flow')[1]}")
@@ -96,8 +102,14 @@ for yaml_file in target_files:
                     most_advanced_index = np.argmax([status_order.index(s) for s in np.array(search['Root request status'])])
 
                     out_dict["Root Request"].append(search['Root request'].iloc[most_advanced_index])
-                    out_dict["Root Status"].append(search['Root request status'].iloc[most_advanced_index])
-                    out_dict["NanoV15 Status"].append(search['NanoAOD status'].iloc[most_advanced_index])
+
+                    if ("DYto2Tau" in name) and (("amcatnlo" in name) or ('madgraph' in name)):
+                        print("DYto2Tau + amcatnlo/madgraph detected, could be an old bugged dataset")
+                        out_dict["Root Status"].append(search['Root request status'].iloc[most_advanced_index] + " (WARNING)")
+                        out_dict["NanoV15 Status"].append(search['NanoAOD status'].iloc[most_advanced_index] + " (WARNING)")
+                    else:
+                        out_dict["Root Status"].append(search['Root request status'].iloc[most_advanced_index])
+                        out_dict["NanoV15 Status"].append(search['NanoAOD status'].iloc[most_advanced_index])
                     out_dict['Chained Request'].append(f"[here](https://cms-pdmv-prod.web.cern.ch/mcm/requests?page=0&member_of_chain={search['Chained request'].iloc[most_advanced_index]})")
                     print(f"Most advanced status: {most_advanced_status}, Request: {search['Root request'].iloc[most_advanced_index]}")
 

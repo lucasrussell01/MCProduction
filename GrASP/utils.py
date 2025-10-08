@@ -1,22 +1,25 @@
 def format_status(status):
-    if status == 'done':
+    if status == 'done' + " (WARNING)":
+        return "$${\\color{green}\\textbf{DONE}}$$ $${\\color{red}\\textbf{(WARNING)}}$$"
+        # return '<span style="color:green">Done</span>'
+    elif 'done' in status:
         return "$${\\color{green}\\textbf{DONE}}$$"
         # return '<span style="color:green">Done</span>'
-    elif status == 'submitted':
+    elif 'submitted' in status:
         return "$${\\color{blue}\\textbf{SUBMITTED}}$$"
         # return '<span style="color:orange">Submitted</span>'
-    elif status == 'new':
+    elif 'new' in status:
         return "$${\\color{orange}\\textbf{NEW}}$$"
         # return '<span style="color:orange">Submitted</span>'
-    elif status == 'validation':
+    elif 'validation' in status:
         return "$${\\color{orange}\\textbf{VALIDATION}}$$"
         # return '<span style="color:blue">Validation</span>'
-    elif status == 'defined':
+    elif 'defined' in status:
         return "$${\\color{orange}\\textbf{DEFINED}}$$"
         # return '<span style="color:blue">Validation</span>'
-    elif status == "N/A":
+    elif 'N/A' in status:
         return "$${\\color{red}\\textbf{MISSING}}$$"
-    elif status == "INV":
+    elif 'INV' in status:
         return "$${\\color{red}\\textbf{INVALID}}$$"
         # return '<span style="color:red; font-weight:bold">MISSING</span>'
     else:
